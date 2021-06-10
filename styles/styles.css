@@ -142,6 +142,7 @@ header {
     header nav a {
       font-size: 1rem;
       line-height: 1.5rem;
+      font-family: "Oswald", sans-serif;
       text-transform: lowercase; }
       @media (min-width: 768px) {
         header nav a {
@@ -150,6 +151,7 @@ header {
       header nav a + a {
         margin-left: 1.5rem; }
 
+/*HERO*/
 section.hero {
   border-bottom: 0.25rem solid #0177BF; }
   section.hero .container {
@@ -196,6 +198,8 @@ section.hero {
     @media (min-width: 768px) {
       section.hero .image {
         display: block; } }
+
+/*HOMEPAGE*/
 section.work {
   border-bottom: 0.25rem solid #0177BF; }
   section.work .container > h1 {
@@ -254,6 +258,7 @@ section.work {
       section.work article:nth-of-type(2n) > *:first-child {
         order: 1; } }
 
+/*FOOTER*/
 footer {
   background-image: none; }
   @media (min-width: 481px) {
@@ -320,5 +325,27 @@ footer {
           line-height: 2.5rem; } }
       footer ul li + li {
         margin-left: 1.5rem; }
+
+/*CASE STUDY*/
+.gridImageArea {
+  display: grid;
+  min-height: 500px;
+  height: 70vh;
+  grid-template-rows: 75% 25%;
+  grid-template-columns: 75% 25%;
+  grid-template-areas: "photo photo" "photo mockup"; }
+  .gridImageArea .photo {
+    grid-area: photo;
+    background-image: url("../images/safetrips/cover-photo.jpg"); }
+  .gridImageArea .mockup {
+    grid-area: mockup;
+    background-image: url("../images/safetrips/mobile-airline-info.png"); }
+  .gridImageArea .gridImage {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    align-items: center;
+    display: flex;
+    position: relative; }
 
 /*# sourceMappingURL=styles.css.map */
