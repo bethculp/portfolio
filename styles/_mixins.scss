@@ -142,14 +142,12 @@
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
-    & > *:first-child,
-    & > *:last-child{
+    & > *{
         width:100%;
         text-align:center;
     }
     @include breakpoint(md){
-        & > *:first-child,
-        & > *:last-child{
+        & > *{
             width:calc(50% - 1em);
             text-align: left;
         }

@@ -159,11 +159,11 @@ section.hero {
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center; }
-    section.hero .container > *:first-child, section.hero .container > *:last-child {
+    section.hero .container > * {
       width: 100%;
       text-align: center; }
     @media (min-width: 768px) {
-      section.hero .container > *:first-child, section.hero .container > *:last-child {
+      section.hero .container > * {
         width: calc(50% - 1em);
         text-align: left; } }
     @media (min-width: 768px) {
@@ -224,11 +224,11 @@ section.work {
     justify-content: space-between;
     align-items: center;
     margin: 1.5rem 0; }
-    section.work article > *:first-child, section.work article > *:last-child {
+    section.work article > * {
       width: 100%;
       text-align: center; }
     @media (min-width: 768px) {
-      section.work article > *:first-child, section.work article > *:last-child {
+      section.work article > * {
         width: calc(50% - 1em);
         text-align: left; } }
     section.work article h1 {
