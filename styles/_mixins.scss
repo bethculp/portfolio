@@ -153,3 +153,20 @@
         }
     }
 }
+
+@mixin grid(){
+    display:grid;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    & > *{
+        width:100%;
+        text-align:center;
+    }
+    @include breakpoint(md){
+        & > *{
+            width:calc(50% - 1em);
+            text-align: left;
+        }
+    }
+}
